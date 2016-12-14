@@ -1,0 +1,177 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+[data-role="page"] {
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 10;
+    padding: 3rem 2rem 8rem 2rem;
+}
+
+[data-role="page"].active {
+    display: block;
+    z-index: 20;
+    background-color: lightgreen;
+    color: #222222;
+}
+
+h1 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: normal;
+    padding-bottom: 1rem 1rem 1rem 1rem;
+}
+
+li {
+    list-style: none;
+}
+
+[data-role="nav"] {
+    position: fixed;
+    z-index: 30;
+    bottom: 0;
+    width: 100%;
+    height: 5rem;
+    padding: 0.5rem 2rem 6rem 2rem;
+    background-color: #999999;
+    border: 0.2rem solid Black;
+}
+
+#nav_gameresults:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+#nav_standings:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+.tabs {
+    list-style: none;
+}
+
+.tabs li {
+    float: left;
+    width: 50%;
+}
+
+.tabs a {
+    display: block;
+    line-height: 2rem;
+    font-size: 3rem;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.tabs a#nav_gameresults:first-child {
+    border-right: 2px solid black;
+}
+
+
+
+.results-list {
+    width: 100%;
+    background-color: pink;
+    box-shadow: 1px 1px 5px #bbb, -1px -1px 6px #ddd;
+    border-radius: 5px;
+}
+
+h3 {
+    padding: 0.2rem;
+    text-align: center;
+    font-weight: 700;
+    background-color: palegreen;
+    border: 3px solid black;
+    border-radius: 5px;
+    text-shadow: 1px 1px 1px darkgreen;
+}
+
+.title {
+    text-shadow: 2px 2px 3px gray;
+}
+
+button {
+    box-sizing: border-box;
+    float: left;
+    margin: 0;
+    width: 100%;
+    height: 3rem;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: #aaaaaa;
+}
+
+.refresh {
+    z-index: 30;
+   
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+th {
+    background-color: green;
+    color: pink;
+    width: 25%;
+    padding: 1rem;
+    margin: 15%;
+    text-align: center;
+}
+
+td {
+    padding: 0.2rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+tr {
+    border-bottom: 1px solid pink;
+}
+
+table.resultsTable {
+    text-align: center;
+    width: 100%;
+    padding-bottom: 1rem;
+}
+
+table.standingsTable {
+    text-align: center;
+    width: 100%;
+    background-color: pink;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+img {
+    width: 45px;
+    height: 45px;
+    padding: 0;
+    margin: 0;
+}
+
+
+#teamStandings {
+    border-collapse: collapse;
+    border: 1px solid #666;
+    width: 90%;
+    margin: 2rem auto;
+}
+
+#teamStandings th,
+#teamStandings td {
+    border: 1px solid #999;
+    text-align: center;
+    padding: 0.5rem 0.5rem;
+    line-height: 2rem;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval' http://griffis.edumedia.ca;">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab" rel="stylesheet">
+    <title>Hockey Score Board</title>
+</head>
+
+<body>
+    <div class="refresh">
+        <button id="refreshPage" type="button">Refresh</button>
+    </div>
+    <div id="gameresults" class="page active" data-role="page">
+        <header>
+            <h1 class="title">Game Results</h1></header>
+        <br>
+        <ul class="results-list"> </ul>
+    </div>
+    <div id="standings" class="page" data-role="page">
+        <header>
+            <h1 class="title">Standings</h1> </header>
+        <br>
+        <table class="standingsTable">
+            <thead>
+                <th>Team</th>
+                <th>W</th>
+                <th>L</th>
+                <th>T</th>
+            </thead>
+            <tbody class="standingsBody"> </tbody>
+        </table>
+    </div>
+    <section data-role="nav" id="nav">
+        <ul class="tabs">
+            <li>
+                <a id="nav_gameresults" href="#gameresults"><img src="img/results.png" alt="Results">
+                    <h1>Results</h1></a>
+            </li>
+            <li>
+                <a id="nav_standings" href="#standings"><img src="img/standings.png" alt="Stadings">
+                    <h1>Standings</h1></a>
+            </li>
+        </ul>
+    </section>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
